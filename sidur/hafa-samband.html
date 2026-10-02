@@ -23,34 +23,38 @@
         </nav>
         <hr>
     </header>
-
+    
     <main>
         <section>
             <article>
                 <h2>Hafa samband</h2>
+                <p>Þú getur sent tölvupóst á <a href="mailto:verkefni@ntv.is">verkefni@ntv.is</a> 
+                eða hringt í mig í síma <a href="tel:8888888">888-8888</a>
+                </p>
                 <p>Láttu mig endilega vita hvernig þér finnst síðan og hvað mætti breyta og betrumbæta!</p>
                 <form action="hafa-samband.html" method="get">
                     <!-- Name -->
                     <label for="name">Nafn:</label>
                     <br>
-                    <input id="name" type="text" size="30">
+                    <input id="name" type="text" size="30" required>
 
                     <!-- Email -->
                     <br>            
                     <label for="email">Tölvupóstur:</label>
                     <br>
-                    <input id="email" type="email" size="30">
+                    <input id="email" type="email" size="30" required>
                     <br>
 
                     <!-- Message post -->
                     <label for="post">Skilaboð:</label>
                     <br>
-                    <textarea name="post" id="post" cols="50" rows="10"></textarea>
+                    <textarea name="post" id="post" cols="50" rows="10" required></textarea>
                     <br>
 
                     <!-- Rating -->
                     <label for="rating">Síðan er:</label>
                     <select name="rating" id="rating">
+                        <option value="" selected>- Veldu -</option>
                         <option value="">Góð</option>
                         <option value="">Betri</option>
                         <option value="">Best</option>
@@ -77,7 +81,6 @@
                     <button>Senda</button>
                 </form>
         
-                <p>Svo getur þú sent <a href="mailto:verkefni@ntv.is">póst</a> líka</p>
             </article>
         </section>
     </main>
